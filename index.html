@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <title>Weather App</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
   <div class="container">
     <h1>Weather App</h1>
-    <input type="text" id="cityInput" placeholder="Enter city name">
-    <button onclick="getWeather()">Get Weather</button>
+    <div class="input_box">
+      <input type="text" id="cityInput" placeholder="Enter city name" required>
+      <button><i class="fa fa-search"></i></button>
+    </div>
+
     <div id="weatherInfo">
       <div class="info">
         <h2 class="city"></h2>
@@ -20,23 +25,22 @@
         <p class="humidity"></p>
         <p class="wind"></p>
       </div>
-      
+
       <div class="degrades">
         <h3 class="temp"></h3>
-        <div id="weather-icon"></div>
-
+        <img src="" class="icon" alt="">
       </div>
     </div>
-    
-  </div>
+<h2>5-Day Forecast:</h2>
+<div class="forecast"></div>
 
+<p class="signature"> © Made By  Vlad.C - 2023 - </p>
   <div class="video-container">
-  <video autoplay muted loop>
-    <source src="clods.mov" type="video/mp4">
-
-  </video>
-
+    <video autoplay muted loop>
+      <source src="clods.mov" type="video/mp4">
+    </video>
   </div>
-  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
+
 </html>

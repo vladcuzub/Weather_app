@@ -3,28 +3,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: white
 }
+
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 600px;
-  height: 450px;
+  width: 1100px;
+  height: auto;
   margin: 10rem auto;
   border-radius: 10%;
-  padding: 2rem  1rem;
-  background: rgba(179, 179, 179, 0.371);
-      box-shadow: 15px 15px 150px rgb(37, 37, 37),
-     inset 1px 5px 10px rgb(26, 26, 26),
-      inset 1px 5px 5px 1px rgba(5, 0, 151, 0.504);
-      background: rgb(2, 0, 36);
-        background: linear-gradient(350deg, rgba(2, 0, 36, 1) 0%, rgba(2, 2, 85, 0.9) 35%, rgb(113, 231, 255) 100%);
+  padding: 2rem 2rem;
+  color: white;
+  box-shadow:
+    5px 5px 150px rgb(37, 37, 37),
+    5px 5px 150px rgb(37, 37, 37),
+    inset 1px 5px 1px rgba(0, 0, 0, 0.582),
+     inset -1px -5px  1px rgba(0, 0, 0, 0.504),
+    inset 1px 5px 1px rgba(0, 0, 0, 0.504); 
+  background: rgb(2, 0, 36);
+  background: linear-gradient(350deg, rgba(2, 0, 36, 0) 0%, rgba(2, 2, 85, 0) 35%, rgba(113, 231, 255, 0) 100%);
+  filter: blur(0);
 }
 
+.input_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 .video-container {
   position: fixed;
@@ -60,25 +73,48 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-bottom: 2rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+.input_box {
+  width: 400px;
 }
 input {
+  width: 300px;
   padding: .5rem;
   border-radius: 10px;
   border: none;
-  font-size: 1.5rem;
-    box-shadow: 5px 5px 10px black;
+  font-size: 1rem;
+  box-shadow: 5px 5px 10px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 button {
-  margin-top: 1rem;
-  padding: 1rem;
-    border-radius: 10px;
-      border: none;
-      box-shadow: 5px 5px 10px black;
-      background-color: rgba(127, 182, 255, 0.74);
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 25px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  box-shadow: 1px 1px 25px rgb(255, 208, 0),
+  inset 1px 1px 14px rgb(255, 94, 0);
+  background-color: rgb(255, 221, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 1rem;
+  transition: linear .3s;
+  cursor: pointer;
+}
+button:hover {
+box-shadow: 1px 1px 25px rgb(255, 149, 0),
+    inset 1px 1px 14px rgb(255, 0, 0);
+  background-color: rgb(255, 221, 0);
+
+}
+ .info p {
+  line-height: 2.3rem;
 }
 
 #weatherInfo {
@@ -89,17 +125,59 @@ button {
   display: flex;
   justify-content: space-between;
 }
-h2,h3,p {
- margin-bottom: .4rem; ;
+
+h2,
+h3,
+p {
+  margin-bottom: .4rem;
+  ;
 }
+
 h2 {
   font-size: 2.3rem;
   color: white;
+    text-shadow: 2px 2px 2px black;
 }
-h3{
+
+h3 {
   color: white;
-  font-size: 2.3rem;
+  font-size: 2.8rem;
+   text-shadow: 2px 2px 2px black;
 }
-p{
+
+p {
   font-size: 1.4rem;
+}
+.forecast {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.forecast div {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+  margin:1.4rem 1rem;
+  line-height: 2.3rem;
+   border-left: .7px solid white;
+   padding:0 2rem 0 2rem;
+}
+.forecast div img {
+  width: 100px;
+    height: 100px;
+}
+
+.degrades img {
+  width: 100%;
+  height: auto;
+}
+
+span {
+  font-size: 1.4rem;
+}
+
+.signature {
+color: rgb(226, 64, 5);
+font-size: .9rem;
 }
