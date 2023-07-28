@@ -18,7 +18,11 @@ body {
   border-radius: 10%;
   padding: 2rem  1rem;
   background: rgba(179, 179, 179, 0.371);
-      box-shadow: 5px 5px 20px rgb(37, 37, 37);
+      box-shadow: 15px 15px 150px rgb(37, 37, 37),
+     inset 1px 5px 10px rgb(26, 26, 26),
+      inset 1px 5px 5px 1px rgba(5, 0, 151, 0.504);
+      background: rgb(2, 0, 36);
+        background: linear-gradient(350deg, rgba(2, 0, 36, 1) 0%, rgba(2, 2, 85, 0.9) 35%, rgb(113, 231, 255) 100%);
 }
 
 
