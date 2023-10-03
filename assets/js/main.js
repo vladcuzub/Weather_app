@@ -1,6 +1,6 @@
 
 "use strict";
-import { apiKey } from "./api.js";
+import { apiKey } from "../js/api.js";
 
 const button = document.querySelector("button");
 const cityInput = document.getElementById("cityInput");
